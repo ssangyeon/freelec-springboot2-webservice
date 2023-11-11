@@ -1,11 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.jojoldu.book.springboot.web.IndexControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-06T08:23:42" hostname="MacBook-Air-2.local" time="0.1">
+<testsuite name="com.jojoldu.book.springboot.web.IndexControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-11T15:03:34" hostname="MacBook-Air-2.local" time="0.11">
   <properties/>
-  <testcase name="메인페이지_로딩" classname="com.jojoldu.book.springboot.web.IndexControllerTest" time="0.1"/>
-  <system-out><![CDATA[2023-11-06 17:23:42.334  INFO 39368 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-11-06 17:23:42.335  INFO 39368 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-11-06 17:23:42.336  INFO 39368 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-11-06 17:23:42.348 DEBUG 39368 --- [o-auto-1-exec-1] org.hibernate.SQL                        : 
+  <testcase name="메인페이지_로딩" classname="com.jojoldu.book.springboot.web.IndexControllerTest" time="0.11"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.17)
+
+2023-11-12 00:03:33.469  INFO 12647 --- [    Test worker] c.j.b.s.web.IndexControllerTest          : Starting IndexControllerTest using Java 11.0.18 on MacBook-Air-2.local with PID 12647 (started by sangyeon in /Users/sangyeon/sudy/freelec-springboot2-webservice)
+2023-11-12 00:03:33.469  INFO 12647 --- [    Test worker] c.j.b.s.web.IndexControllerTest          : The following 1 profile is active: "oauth"
+2023-11-12 00:03:33.554  INFO 12647 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-12 00:03:33.560  INFO 12647 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2023-11-12 00:03:33.736  INFO 12647 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-11-12 00:03:33.743  INFO 12647 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-12 00:03:33.743  INFO 12647 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-12 00:03:33.830  INFO 12647 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-12 00:03:33.830  INFO 12647 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 360 ms
+2023-11-12 00:03:33.841  INFO 12647 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-11-12 00:03:33.842  INFO 12647 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-11-12 00:03:33.842  INFO 12647 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-11-12 00:03:33.927  INFO 12647 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-12 00:03:33.930  INFO 12647 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-12 00:03:33.961  INFO 12647 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-12 00:03:33.961  INFO 12647 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-12 00:03:34.012  WARN 12647 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-12 00:03:34.086  INFO 12647 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5410bbdf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@323dd422, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b35976a, org.springframework.security.web.header.HeaderWriterFilter@77f43f3e, org.springframework.security.web.authentication.logout.LogoutFilter@3acae925, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@7dfc0fda, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@775c865f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@688c914e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2f229f60, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67c64b9c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@311d8595, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cdf8aa5, org.springframework.security.web.session.SessionManagementFilter@379ddab2, org.springframework.security.web.access.ExceptionTranslationFilter@2a0cc666, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ffd26d1]
+2023-11-12 00:03:34.150  INFO 12647 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-11-12 00:03:34.275  INFO 12647 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61623 (http) with context path ''
+2023-11-12 00:03:34.278  INFO 12647 --- [    Test worker] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-11-12 00:03:34.279  INFO 12647 --- [    Test worker] c.j.b.s.web.IndexControllerTest          : Started IndexControllerTest in 0.829 seconds (JVM running for 5.427)
+2023-11-12 00:03:34.336  INFO 12647 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-12 00:03:34.337  INFO 12647 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-12 00:03:34.338  INFO 12647 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-12 00:03:34.360 DEBUG 12647 --- [o-auto-1-exec-1] org.hibernate.SQL                        : 
     select
         posts0_.id as id1_0_,
         posts0_.created_date as created_2_0_,

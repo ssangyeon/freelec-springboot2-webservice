@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.jojoldu.book.springboot.web.HelloControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-06T08:23:42" hostname="MacBook-Air-2.local" time="0.044">
+<testsuite name="com.jojoldu.book.springboot.web.HelloControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-11T15:03:33" hostname="MacBook-Air-2.local" time="0.1">
   <properties/>
-  <testcase name="hello가_리턴된다" classname="com.jojoldu.book.springboot.web.HelloControllerTest" time="0.011"/>
-  <testcase name="helloDto가_리턴된다" classname="com.jojoldu.book.springboot.web.HelloControllerTest" time="0.032"/>
+  <testcase name="hello가_리턴된다" classname="com.jojoldu.book.springboot.web.HelloControllerTest" time="0.044"/>
+  <testcase name="helloDto가_리턴된다" classname="com.jojoldu.book.springboot.web.HelloControllerTest" time="0.055"/>
   <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -12,14 +12,14 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::               (v2.7.17)
 
-2023-11-06 17:23:41.906  INFO 39368 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : Starting HelloControllerTest using Java 11.0.18 on MacBook-Air-2.local with PID 39368 (started by sangyeon in /Users/sangyeon/sudy/freelec-springboot2-webservice)
-2023-11-06 17:23:41.906  INFO 39368 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : The following 1 profile is active: "oauth"
-2023-11-06 17:23:42.075  INFO 39368 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2023-11-06 17:23:42.200  INFO 39368 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5434de8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c84d6c4, org.springframework.security.web.context.SecurityContextPersistenceFilter@2dca3c72, org.springframework.security.web.header.HeaderWriterFilter@5cfcb55c, org.springframework.security.web.csrf.CsrfFilter@6415112c, org.springframework.security.web.authentication.logout.LogoutFilter@4fddd42b, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@6fad6743, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@426753a6, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@68a0a4ae, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@494f74cd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2a2d0cff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5fc4af25, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66abb7d4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40eb85e9, org.springframework.security.oauth2.client.web.OAuth2AuthorizationCodeGrantFilter@376ba8e3, org.springframework.security.web.session.SessionManagementFilter@416dd4d8, org.springframework.security.web.access.ExceptionTranslationFilter@10ac5a14, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54c3bae]
-2023-11-06 17:23:42.224  INFO 39368 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2023-11-06 17:23:42.224  INFO 39368 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-11-06 17:23:42.225  INFO 39368 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2023-11-06 17:23:42.231  INFO 39368 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : Started HelloControllerTest in 0.339 seconds (JVM running for 5.487)
+2023-11-12 00:03:32.980  INFO 12647 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : Starting HelloControllerTest using Java 11.0.18 on MacBook-Air-2.local with PID 12647 (started by sangyeon in /Users/sangyeon/sudy/freelec-springboot2-webservice)
+2023-11-12 00:03:32.980  INFO 12647 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : The following 1 profile is active: "oauth"
+2023-11-12 00:03:33.150  INFO 12647 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-11-12 00:03:33.296  INFO 12647 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4563d421, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1465914, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c0d7878, org.springframework.security.web.header.HeaderWriterFilter@3705e3fb, org.springframework.security.web.csrf.CsrfFilter@bb9bad9, org.springframework.security.web.authentication.logout.LogoutFilter@6479b4cb, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@333cedbd, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@4225b4e2, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@388b9799, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3de8e614, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3a7deba5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a349644, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42b6acc2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78fc5eb, org.springframework.security.oauth2.client.web.OAuth2AuthorizationCodeGrantFilter@7fb84ef7, org.springframework.security.web.session.SessionManagementFilter@cfe7be3, org.springframework.security.web.access.ExceptionTranslationFilter@71acf065, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@56a69c47]
+2023-11-12 00:03:33.336  INFO 12647 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-11-12 00:03:33.336  INFO 12647 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-11-12 00:03:33.337  INFO 12647 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-11-12 00:03:33.344  INFO 12647 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : Started HelloControllerTest in 0.38 seconds (JVM running for 4.491)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
