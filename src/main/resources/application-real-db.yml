@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+  datasource:
+    url: jdbc:mariadb://3306/springboot-webservice
+    username: sangyeon
+    password: sangyeon
+    driver-class-name: org.mariadb.jdbc.Driver

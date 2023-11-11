@@ -1,0 +1,43 @@
+server:
+  servlet:
+    encoding:
+      force-response: true #mustache 한글깨짐 해결
+  port: 8080
+spring:
+  # Test OAuth
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 974321170676-jbf4an80u1bq9lt4q4o7u018ngkitflv.apps.googleusercontent.com
+            client-secret: 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
+            redirect-uri: http://localhost:8080/login/oauth2/code/google
+            scope: profile,email
+  session:
+    store-type=jdbc: jdbc
+  h2:
+    console:
+      enabled: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:test
+    username: sa
+    password:
+  profiles:
+    include: oauth
+  # 실행되는 쿼리 콘솔 출력
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        jdbc:
+          batch_size: 100
+    hibernate:
+      ddl-auto: update
+
+logging.level:
+  org.hibernate.SQL: debug
+#  org.hibernate.type: trace
