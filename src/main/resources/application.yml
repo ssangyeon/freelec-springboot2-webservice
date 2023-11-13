@@ -2,6 +2,7 @@ server:
   servlet:
     encoding:
       force-response: true #mustache 한글깨짐 해결
+  address: 0.0.0.0
   port: 8080
 spring:
   # Test OAuth
