@@ -4,7 +4,7 @@ spring:
       ddl-auto: none
 
   datasource:
-    url: jdbc:mariadb://3306/springboot-webservice
+    url: jdbc:mariadb://3306/springboot_webservice
     username: sangyeon
     password: sangyeon
     driver-class-name: org.mariadb.jdbc.Driver
